@@ -11,7 +11,7 @@ export default function HomeScreen() {
   return (
     <View style={{ flex: 1 }}>
       <View style={styles.headerBackground} />
-      <Header style={{ zIndex: 1 }} />
+      {/* <Header style={{ zIndex: 1 }} /> */}
       <SearchBar />
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         <View style={styles.courseListContainer}>

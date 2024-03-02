@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { StyledContainer } from '../styles';
 import { Text, View, Image} from 'react-native';
-import { AuthContext } from '../../Context/AuthContext';
+// import { AuthContext } from '../../Context/AuthContext';
 import {colors} from '../../components/styles.js';
 
 

@@ -1,4 +1,4 @@
-import { request, gql } from 'graphql-request';
+import { request, gql, } from 'graphql-request';
 
 const MASTER_URL = "https://api-eu-west-2.hygraph.com/v2/clrh3sfyw12vw01w9t7o5dfxc/master";
 
@@ -66,3 +66,18 @@ return result;
 }
 
 
+export const getUserEnrolledCourse=async(courseId)=>{
+  const query=gql`
+  query GetUserEnrolledCourse {
+    userInrolledCourses(where: {courseId: `+courseId+`}) {
+      courseId
+      completedChapter {
+        chapterId
+      }
+    }
+  }
+  
+  `
+const result = await request(MASTER_URL, query);
+return result;
+}

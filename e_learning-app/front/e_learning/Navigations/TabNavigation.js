@@ -14,7 +14,6 @@ import RootStack from './RootStack';
 
 
 
-
 const Tab=createBottomTabNavigator();
 
 
@@ -34,10 +33,10 @@ export default function TabNavigation() {
         tabBarIcon: () => <Feather name="book-open" size={26} color="#FFB000" />,
       }}/>
 
-      <Tab.Screen name='Leaderboard' component={LeaderBoard} 
+      {/* <Tab.Screen name='Leaderboard' component={LeaderBoard} 
       options={{
         tabBarIcon: () => <MaterialIcons name="leaderboard" size={26} color="#FFB000" />,
-      }}/>
+      }}/> */}
 
       <Tab.Screen name='Profile' component={ProfileScreen} 
       options={{
